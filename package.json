@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "js-yaml": "^4.1.0",
+    "path": "^0.12.7",
+    "url": "^0.11.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "src",
+  "version": "1.0.0",
+  "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

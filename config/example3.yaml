@@ -1,0 +1,20 @@
+actions:
+  - type: remove
+    selector: ".ad-banner"
+  - type: replace
+    selector: "#header"
+    newElement: "<header id='new-header'>New Header Content</header>"
+  - type: insert
+    position: "before"
+    target: "#main"
+    element: "<nav>Navigation Bar</nav>"
+  - type: insert
+    position: "after"
+    target: ".footer"
+    element: "<div class='extra-info'>Extra Information</div>"
+  - type: alter
+    oldValue: "Machine Learning"
+    newValue: "Hello"
+  - type: alter
+    oldValue: "Machine Learning"
+    newValue: "Farewell"

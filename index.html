@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YAML DOM Manipulation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #333;
+      margin: 10px 0;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    #old-header {
+      color: #fff;
+      background-color: #3498db;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .ad-banner {
+      background-color: #f0ad4e;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    #yaml-content, #generated-content {
+      white-space: pre;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      background-color: #eee;
+    }
+
+    #yaml-file,
+    button {
+      padding: 10px 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="old-header">Old Header</h1>
+  <div class="ad-banner">This is an ad banner</div>
+  <p>AI is a growing technology. AI is transforming industries and advancing rapidly.</p>
+  <p>Machine Learning is important.</p>
+  <p>Machine Learningis a subset of AI.</p>
+  <p>In AI, we use various algorithms.</p>
+  <p>AI can help in making predictions.</p>
+  <p>Machine Learning and AI are transforming industries.</p>
+  <p>AI technology is advancing rapidly.</p>
+
+  <input type="file" id="yaml-file" />
+  <button onclick="loadYAML()">Load YAML</button>
+
+  <h2>YAML Dosya İçeriği:</h2>
+  <pre id="yaml-content"></pre>
+
+  <h2>Oluşturulan Dosya:</h2>
+  <pre id="generated-content"></pre>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.14.0/js-yaml.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
